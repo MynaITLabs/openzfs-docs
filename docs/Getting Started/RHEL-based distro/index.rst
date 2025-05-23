@@ -43,6 +43,10 @@ and for EL8 and 9::
 
  dnf install https://zfsonlinux.org/epel/zfs-release-2-3$(rpm --eval "%{dist}").noarch.rpm
 
+Example: release 2-3.el9
+AlmaLinux 9.5 / 9.6  - dist ".el9"
+CentOS Stream 8  - dist ".el8"
+
 After installing the *zfs-release* package and verifying the public key
 users can opt to install either the DKMS or kABI-tracking kmod style packages.
 DKMS packages are recommended for users running a non-distribution kernel or
