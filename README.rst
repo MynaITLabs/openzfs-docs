@@ -16,8 +16,12 @@ The dependencies are available via pip::
 
    # For Debian based distros
    sudo apt install python3-pip
+
    # For RPM-based distros
    sudo yum install python3-pip
+   or newer
+   sudo dnf install python3-php
+
    # For openSUSE
    sudo zypper in python3-pip
 
