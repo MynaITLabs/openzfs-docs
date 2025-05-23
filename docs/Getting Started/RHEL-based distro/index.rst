@@ -24,12 +24,12 @@ the fingerprint listed here.
 | **Key location:** /etc/pki/rpm-gpg/RPM-GPG-KEY-openzfs (previously -zfsonlinux)
 | **Current release packages:** `EL7`_, `EL8`_, `EL9`_
 | **Archived release packages:** `see repo page <https://github.com/zfsonlinux/zfsonlinux.github.com/tree/master/epel>`__
-
+  
 | **Signing key1 (EL8 and older, Fedora 36 and older)**
   `pgp.mit.edu <https://pgp.mit.edu/pks/lookup?search=0xF14AB620&op=index&fingerprint=on>`__ /
   `direct link <https://raw.githubusercontent.com/zfsonlinux/zfsonlinux.github.com/master/zfs-release/RPM-GPG-KEY-openzfs-key1>`__
 | **Fingerprint:** C93A FFFD 9F3F 7B03 C310 CEB6 A9D5 A1C0 F14A B620
-
+  
 | **Signing key2 (EL9+, Fedora 37+)**
   `pgp.mit.edu <https://pgp.mit.edu/pks/lookup?search=0xA599FD5E9DB84141&op=index&fingerprint=on>`__ /
   `direct link <https://raw.githubusercontent.com/zfsonlinux/zfsonlinux.github.com/master/zfs-release/RPM-GPG-KEY-openzfs-key2>`__
@@ -127,13 +127,16 @@ will be aliased to the current minor version (e.g. `8.7`), but you can specify
 `--releasever` to use previous repositories. ::
 
   [vagrant@localhost ~]$ dnf list available --showduplicates kmod-zfs
+
   Last metadata expiration check: 0:00:08 ago on tor 31 jan 2023 17:50:05 UTC.
   Available Packages
   kmod-zfs.x86_64                          2.1.6-1.el8                          zfs-kmod
   kmod-zfs.x86_64                          2.1.7-1.el8                          zfs-kmod
   kmod-zfs.x86_64                          2.1.8-1.el8                          zfs-kmod
   kmod-zfs.x86_64                          2.1.9-1.el8                          zfs-kmod
+
   [vagrant@localhost ~]$ dnf list available --showduplicates --releasever=8.6 kmod-zfs
+
   Last metadata expiration check: 0:16:13 ago on tor 31 jan 2023 17:34:10 UTC.
   Available Packages
   kmod-zfs.x86_64                          2.1.4-1.el8                          zfs-kmod
