@@ -19,7 +19,7 @@ The dependencies are available via pip::
 
    # For RPM-based distros
    sudo yum install python3-pip
-   or newer
+       or
    sudo dnf install python3-php
 
    # For openSUSE
